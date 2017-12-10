@@ -1,0 +1,25 @@
+:root {
+    --min-size: 250px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--min-size));
+    grid-gap: 10px;
+    background-color: #ffa07a;
+    color: #0e0e0e;
+    transition: all 0.2s;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    height: 250px;
+   
+}

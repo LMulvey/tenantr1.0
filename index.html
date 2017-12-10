@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <label for="slider">Change the min size for items:</label>
+    <input id="slider" type="range" min="50" max="1000" value="250" />
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+    </div>
+</body>
+<script>
+    const slider = document.querySelector('#slider');
+
+    function adjustFlexSize() {
+        let {value} = this;
+        console.log(value);
+        document.documentElement.style.setProperty(`--min-size`, `${value}px`);
+    }
+
+    slider.addEventListener('change', adjustFlexSize);
+    slider.addEventListener('mousemove', adjustFlexSize);
+</script>
+</html>
