@@ -1,5 +1,5 @@
 # Tenantr
-## Tenant and Landlord Management
+## Tenant and Landlord Management System
 
 ### Usage
 Tenantr is currently built using npm. You can install the latest version and dependencies with `npm install tenantr`.
